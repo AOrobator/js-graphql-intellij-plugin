@@ -60,7 +60,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * Highlights the operation at the cursor and any fragments in relies on in the editor.
+ * Highlights the operation at the cursor and any fragments it relies on in the editor.
  * Also provides the query buffer that corresponds to that highlight to execute it against a server.
  * Elements not included in query execution are dimmed down.
  */
