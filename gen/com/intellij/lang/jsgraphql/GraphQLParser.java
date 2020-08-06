@@ -262,9 +262,9 @@ public class GraphQLParser implements PsiParser, LightPsiParser {
   }
 
   /* ********************************************************** */
-  // operationDefinition |
-  //     fragmentDefinition |
-  //     typeSystemDefinition |
+  // operationDefinition |
+  //     fragmentDefinition |
+  //     typeSystemDefinition |
   //     templateDefinition
   public static boolean definition(PsiBuilder builder, int level) {
     if (!recursion_guard_(builder, level, "definition")) return false;
@@ -1665,8 +1665,8 @@ public class GraphQLParser implements PsiParser, LightPsiParser {
   }
 
   /* ********************************************************** */
-  // field |
-  //     fragmentSelection |
+  // field |
+  //     fragmentSelection |
   //     templateSelection
   public static boolean selection(PsiBuilder builder, int level) {
     if (!recursion_guard_(builder, level, "selection")) return false;
@@ -1845,11 +1845,11 @@ public class GraphQLParser implements PsiParser, LightPsiParser {
   }
 
   /* ********************************************************** */
-  // scalarTypeDefinition |
-  //     objectTypeDefinition |
-  //     interfaceTypeDefinition |
-  //     unionTypeDefinition |
-  //     enumTypeDefinition |
+  // scalarTypeDefinition |
+  //     objectTypeDefinition |
+  //     interfaceTypeDefinition |
+  //     unionTypeDefinition |
+  //     enumTypeDefinition |
   //     inputObjectTypeDefinition
   public static boolean typeDefinition(PsiBuilder builder, int level) {
     if (!recursion_guard_(builder, level, "typeDefinition")) return false;
@@ -1866,11 +1866,11 @@ public class GraphQLParser implements PsiParser, LightPsiParser {
   }
 
   /* ********************************************************** */
-  // objectTypeExtensionDefinition |
-  //     interfaceTypeExtensionDefinition |
-  //     unionTypeExtensionDefinition |
-  //     scalarTypeExtensionDefinition |
-  //     enumTypeExtensionDefinition |
+  // objectTypeExtensionDefinition |
+  //     interfaceTypeExtensionDefinition |
+  //     unionTypeExtensionDefinition |
+  //     scalarTypeExtensionDefinition |
+  //     enumTypeExtensionDefinition |
   //     inputObjectTypeExtensionDefinition
   public static boolean typeExtension(PsiBuilder builder, int level) {
     if (!recursion_guard_(builder, level, "typeExtension")) return false;
@@ -1952,9 +1952,9 @@ public class GraphQLParser implements PsiParser, LightPsiParser {
   }
 
   /* ********************************************************** */
-  // schemaDefinition |
-  //     typeDefinition |
-  //     typeExtension |
+  // schemaDefinition |
+  //     typeDefinition |
+  //     typeExtension |
   //     directiveDefinition
   public static boolean typeSystemDefinition(PsiBuilder builder, int level) {
     if (!recursion_guard_(builder, level, "typeSystemDefinition")) return false;
@@ -2119,15 +2119,15 @@ public class GraphQLParser implements PsiParser, LightPsiParser {
   }
 
   /* ********************************************************** */
-  // templateVariable |
-  //     variable |
-  //     stringValue |
-  //     intValue |
-  //     floatValue |
-  //     booleanValue |
-  //     nullValue |
-  //     enumValue |
-  //     arrayValue |
+  // templateVariable |
+  //     variable |
+  //     stringValue |
+  //     intValue |
+  //     floatValue |
+  //     booleanValue |
+  //     nullValue |
+  //     enumValue |
+  //     arrayValue |
   //     objectValue
   public static boolean value(PsiBuilder builder, int level) {
     if (!recursion_guard_(builder, level, "value")) return false;

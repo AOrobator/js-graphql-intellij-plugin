@@ -48,8 +48,10 @@ public class JSGraphQLEndpointDocParser implements PsiParser, LightPsiParser {
   }
 
   /* ********************************************************** */
-  // Tag
-  //     |
+  // Tag
+
+  //     |
+
   //     docText
   static boolean Rule(PsiBuilder builder_, int level_) {
     if (!recursion_guard_(builder_, level_, "Rule")) return false;
